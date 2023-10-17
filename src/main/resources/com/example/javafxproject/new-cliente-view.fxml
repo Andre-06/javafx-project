@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.paint.Color?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxproject.NewClienteView"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.leftAnchor="0.0" spacing="20">
+        <padding>
+            <Insets bottom="30" top="15" left="20" right="20"/>
+        </padding>
+
+        <VBox alignment="CENTER" spacing="3.0">
+            <Label text="Cadastrar Cliente">
+                <font>
+                    <Font name="System Bold" size="32" />
+                </font>
+            </Label>
+
+            <Label text="Utilize o formulário abaixo para realizar o seu cadastro">
+                <font>
+                    <Font name="System" size="13" />
+                </font>
+            </Label>
+
+        </VBox>
+
+        <Label fx:id="alertLabel">
+            <font>
+                <Font name="System Bold" size="16" />
+            </font>
+        </Label>
+
+        <VBox spacing="20">
+            <VBox spacing="5">
+                <Label text="Nome">
+                    <font>
+                        <Font name="System" size="13" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameField" />
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Email">
+                    <font>
+                        <Font name="System" size="13" />
+                    </font>
+                </Label>
+                <TextField fx:id="emailField"/>
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Telefone">
+                    <font>
+                        <Font name="System" size="13" />
+                    </font>
+                </Label>
+                <TextField fx:id="telField"/>
+            </VBox>
+
+            <CheckBox fx:id="promoteCheckBox" text="Quero receber promoções no e-mail" />
+
+        </VBox>
+
+        <HBox alignment="CENTER_RIGHT">
+            <Button onAction="#cadastrarAction" text="Cadastrar" />
+        </HBox>
+
+    </VBox>
+
+
+</AnchorPane>
